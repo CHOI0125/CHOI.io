@@ -1,0 +1,17 @@
+<DOCYPE HTML>
+    <html>
+        <head>
+            
+        </head>
+        <body>
+            <h1><%=@home.id%>를 수정할 화면입니다.</h1>
+            <form action="/home/update/<%=@home.id%>"> <!--create라는 액션은 취한다-->
+                <p>제목</p>
+                <input type ="text" name="input_title" value="<%=@home.title%>">
+                <p>내용</p>
+                <input type ="text" name="input_content" value="<%=@home.content%>">
+                <input type ="submit">
+                
+            </form>
+        </body>
+    </html>

@@ -1,0 +1,7 @@
+<% @homes.each do |p| %>
+  제목: <a href ="/home/show/<%= p.id %>"><%= p.title %></a> <br>
+  내용: <a href ="/home/show/<%= p.id %>"><%= p.content %></a><br>
+  <%= image_tag p.image.url %><br>
+  <hr>
+ <% end %>
+<p><a href = "/home/new">새 글 쓰러가기</a></p>
